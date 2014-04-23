@@ -12,7 +12,7 @@ Setup
 
 Screenshots
 -----------
-![First page](http://github.com/lemonad/ksu-online/raw/master/ksu-online/images/screenshot1.png)
+![First page](https://raw.githubusercontent.com/lemonad/ksu-online/master/images/screenshot1.png)
 
-![Second page](http://github.com/lemonad/ksu-online/raw/master/ksu-online/images/screenshot2.png)
+![Second page](https://raw.githubusercontent.com/lemonad/ksu-online/master/images/screenshot2.png)
 
