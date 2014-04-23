@@ -2,7 +2,7 @@
 /*global $, jQuery*/
 
 /*
- * ksu-online.se
+ * ksuonline.se
  *
  * Kärnkraftsäkerhet och Utbildning AB 2014
  *

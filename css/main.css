@@ -22,8 +22,9 @@ a:hover {
 }
 
 main {
-    margin: 0;
+    margin: 0 0 -10em 0;
     padding: 3em 0 0 0;
+
     background-color: #225b90;
     background-image: -webkit-linear-gradient(top, #225b90 0%, #227431 100%);
     background-image:    -moz-linear-gradient(top, #225b90 0%, #227431 100%);
@@ -36,8 +37,9 @@ main .text-center {
     width: 500px;
 }
 article {
-    min-height: 200vh;
-    padding: 0 2em 25px 3em;
+    padding: 0 2em 0 3em;
+    position: relative;
+    z-index: 99;
 }
 section {
     width: 100%;
@@ -100,7 +102,6 @@ h1 {
     height: 82px;
 
     background-image: url(../images/logo.png);
-    background-position: left top;
     background-repeat: no-repeat;
 
     direction: ltr;
@@ -121,11 +122,11 @@ h4, h5, p {
 h3 {
     white-space: nowrap;
 }
-h4 {
-    margin-bottom: 10em;
-}
 h5 {
     font-weight: normal;
+}
+h5#faq {
+    padding-top: 1em;
 }
 p {
     font-size: 1.2em;
@@ -152,7 +153,6 @@ main ul a {
     overflow: hidden;
 
     background-image: url(../images/people.png);
-    background-position: left top;
     background-repeat: no-repeat;
     background-size: 533px 1096px;
 
@@ -161,7 +161,6 @@ main ul a {
 }
 main ul li:nth-child(1) a {
     width: 145px;
-    background-position: left top;
 }
 main ul li:nth-child(2) a {
     background-position: -163px top;
@@ -180,13 +179,21 @@ main ul li:nth-child(2) a:hover {
 main ul li:nth-child(3) a:hover {
     background-position: -410px -555px;
 }
+main .downbutton {
+    display: block;
+    width: 53px;
+    height: 53px;
+    margin: 2em auto 18em auto;
+
+    background-image: url(../images/down-button.png);
+    background-repeat: no-repeat;
+}
 
 footer {
     position: relative;
     width: 100%;
-    z-index: 0;
     margin: 0;
-    padding-top: 2em;
+    padding: 0;
 
     background-image: -webkit-linear-gradient(top, #227431 0%, #FFF700 90%, #051207);
     background-image:    -moz-linear-gradient(top, #227431 0%, #FFF700 90%, #051207);
@@ -195,30 +202,28 @@ footer {
     background-image:   linear-gradient(to bottom, #227431 0%, #FFF700 90%, #051207);
 }
 footer .stars {
-    position: absolute;
-    top: 0;
-    left: 0;
+    position: relative;
     height: 314px;
     width: 100%;
     margin: 0;
     z-index: 1;
 
     background-image: url(../images/stars.png);
-    background-position: left top;
     background-repeat: repeat-x;
 }
-footer .silhouette {
-    position: relative;
+footer .stars .silhouette {
+    position: absolute;
+    bottom: 0;
+    left: 0;
     height: 113px;
     width: 100%;
-    z-index: 2;
-    margin: 169px 0 0 0;
 
     background-image: url(../images/silhouette.png);
-    background-position: left top;
     background-repeat: no-repeat;
 }
 footer .bottomless {
+    position: relative;
+    top: -1px; /* prevent gap when <100% zoom. */
     height: 5em;
     width: 100%;
     margin: 0;
