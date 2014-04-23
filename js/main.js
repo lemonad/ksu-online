@@ -76,4 +76,7 @@ $(function () {
     setTimeout(function () {
         $('body').addClass('loaded');
     }, 300);
+
+    // Initialize starfield parallax scrolling.
+    $('#parallax').parallax({limitY: 0});
 });

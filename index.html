@@ -124,9 +124,14 @@
     </main>
 
     <footer>
-        <div class="stars">
-            <div class="silhouette"></div>
-        </div>
+        <ul id="parallax">
+            <li class="layer" data-depth="0.3">
+                <div class="stars"></div>
+            </li>
+            <li class="layer" data-depth="0.0">
+                <div class="silhouette"></div>
+            </li>
+        </ul>
         <div class="bottomless">
             <a href="http://ksu.se/">
                 <img class="ksu-logo" src="images/ksu-logo.png" alt="logo">
@@ -137,6 +142,7 @@
 
     <!-- Additional javascript -->
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/parallax/deploy/jquery.parallax.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

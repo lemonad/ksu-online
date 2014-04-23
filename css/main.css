@@ -201,17 +201,26 @@ footer {
     background-image:      -o-linear-gradient(top, #227431 0%, #FFF700 90%, #051207);
     background-image:   linear-gradient(to bottom, #227431 0%, #FFF700 90%, #051207);
 }
-footer .stars {
-    position: relative;
+#parallax {
     height: 314px;
-    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+footer .stars {
+    position: absolute;
+    width: 300%;
+    top: 0;
+    left: -100%;
+    height: 314px;
     margin: 0;
     z-index: 1;
 
     background-image: url(../images/stars.png);
     background-repeat: repeat-x;
+    background-position: top right;
 }
-footer .stars .silhouette {
+footer .silhouette {
     position: absolute;
     bottom: 0;
     left: 0;
