@@ -11,6 +11,7 @@ body {
     color: white;
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: normal;
+    background-color: #051207;
 }
 a {
     color: #eee;
@@ -22,7 +23,7 @@ a:hover {
 }
 
 main {
-    margin: 0 0 -10em 0;
+    margin: 0;
     padding: 3em 0 0 0;
 
     background-color: #225b90;
@@ -37,6 +38,7 @@ main .text-center {
     width: 500px;
 }
 article {
+    margin: 0;
     padding: 0 2em 0 3em;
     position: relative;
     z-index: 99;
@@ -127,12 +129,16 @@ h5 {
 }
 h5#faq {
     padding-top: 1em;
+    margin-top: 3em;
 }
 p {
     font-size: 1.2em;
     color: #fff;
 
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.30);
+}
+p:last-child {
+    margin-bottom: 0;
 }
 
 main ul {
@@ -252,10 +258,13 @@ footer .ksu-text {
     margin: 0;
 }
 
-.courses.flipOutX {
+.courses.flipOutX, .titles.flipOutX {
     -webkit-animation-duration: 0.25s;
        -moz-animation-duration: 0.25s;
             animation-duration: 0.25s;
+}
+.courses, .titles {
+    display: inline-block;
 }
 .titles.flipOutX {
     -webkit-animation-duration: 0.25s;
