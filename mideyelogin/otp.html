@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Hjälper dig nå världsklass.">
+    <title>KSU Online</title>
+
+    <script type="text/javascript">
+        // Google Analytics goes here later.
+    </script>
+
+    <link rel="canonical" href="https://ksuonline.se/mideyelogin/login">
+
+    <!-- CSS -->
+    <link href="../bower_components/normalize-css/normalize.css"
+          rel="stylesheet">
+    <link href="../css/main.css" rel="stylesheet">
+
+    <!-- Fonts -->
+    <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400"
+          rel="stylesheet"
+          type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:300"
+          rel="stylesheet"
+          type="text/css">
+
+    <!-- Javascript -->
+    <script src="../bower_components/viewport-units-buggyfill/viewport-units-buggyfill.js"></script>
+    <script>window.viewportUnitsBuggyfill.init();</script>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>
+                <a href="/blenda/">Blenda</a>
+            </li><li>
+                <a href="/tvaren/gemensam/">Tvären</a>
+            </li><li>
+                <a href="http://www.ksu.se/sf-inloggning">Platå</a>
+            </li><li>
+                Mediearkivet
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        <article>
+            <section>
+                <h1>
+                    <a href="/">KSU Online</a>
+                </h1>
+
+                <div class="text-center2" style="text-align: center;">
+                    <h3>
+                        Skriv in koden som skickades till din mobil.
+                    </h3>
+
+                    <form id="login_form" method="post">
+                        <input type="hidden"
+                               name="%SESSIONID%"
+                               value="%SESSIONVALUE%">
+                        <p class="err">
+                            <!-- OTP -->
+                        </p>
+
+                        <label for="password">Mobilkod</label>
+                        <input type="number"
+                               name="otp"
+                               autofocus="autofocus"
+                               placeholder="mobilkod">
+
+                        <input type="submit" name="login" value="Logga in">
+                    </form>
+                </div>
+            </section>
+        </article>
+    </main>
+
+    <footer>
+        <ul id="parallax">
+            <li class="layer" data-depth="0.5">
+                <div class="stars"></div>
+            </li>
+            <li class="layer" data-depth="0.0">
+                <div class="silhouette"></div>
+            </li>
+        </ul>
+        <div class="bottomless">
+            <a href="http://ksu.se/">
+                <img class="ksu-logo" src="../images/ksu-logo.png" alt="logo">
+            </a>
+            <p class="ksu-text"><small>Kärnkraftsäkerhet och Utbildning AB</small></p>
+        </div>
+    </footer>
+
+    <!-- Additional javascript -->
+    <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="../bower_components/parallax/deploy/jquery.parallax.min.js"></script>
+    <script src="../js/login.js"></script>
+</body>
+</html>

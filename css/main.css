@@ -272,6 +272,138 @@ footer .ksu-text {
             animation-duration: 0.25s;
 }
 
+form {
+    margin: 0 auto;
+    width: 22em;
+
+    -webkit-animation: login 1s ease-in-out;
+       -moz-animation: login 1s ease-in-out;
+        -ms-animation: login 1s ease-in-out;
+         -o-animation: login 1s ease-in-out;
+            animation: login 1s ease-in-out;
+}
+label {
+    display: none;
+}
+.err {
+    color: #fcc;
+}
+input[type="text"],
+input[type="password"],
+input[type="number"] {
+    width: 100%;
+    height: 3em;
+    margin: 0.5em 0 0 0;
+    padding-left: 1em;
+
+    font-size: 1em;
+    color: #444;
+
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: 6px;
+
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+         -o-box-sizing: border-box;
+            box-sizing: border-box;
+
+    background-image: -webkit-linear-gradient(bottom, #fff 0%, #f2f2f2 100%);
+    background-image:    -moz-linear-gradient(bottom, #fff 0%, #f2f2f2 100%);
+    background-image:     -ms-linear-gradient(bottom, #fff 0%, #f2f2f2 100%);
+    background-image:      -o-linear-gradient(bottom, #fff 0%, #f2f2f2 100%);
+    background-image:         linear-gradient(bottom, #fff 0%, #f2f2f2 100%);
+
+    -webkit-box-shadow: inset 0 2px 0 #d9d9d9;
+       -moz-box-shadow: inset 0 2px 0 #d9d9d9;
+            box-shadow: inset 0 2px 0 #d9d9d9;
+
+    -webkit-transition: all .1s ease-in-out;
+       -moz-transition: all .1s ease-in-out;
+        -ms-transition: all .1s ease-in-out;
+         -o-transition: all .1s ease-in-out;
+            transition: all .1s ease-in-out;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+       -moz-appearance: none;
+    margin: 0;
+}
+input:first-child {
+    margin-top: 0;
+}
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus {
+    outline: none;
+    border: 2px solid rgba(65, 117, 5, .7);
+    -webkit-box-shadow: inset 0 2px 0 #b7cc9f;
+       -moz-box-shadow: inset 0 2px 0 #b7cc9f;
+            box-shadow: inset 0 2px 0 #b7cc9f;
+}
+input[type="submit"] {
+    width: 100%;
+    height: 2.6em;
+    margin-top: 7px;
+    color: #fff;
+    cursor: pointer;
+
+    border: 1px solid rgba(255, 255, 255, .2);
+    border-radius: 6px;
+
+    font-size: 1.2em;
+    text-shadow: 0 1px 0 #417505;
+
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+         -o-box-sizing: border-box;
+            box-sizing: border-box;
+
+    background-color: #417505;
+    background-image: -webkit-linear-gradient(bottom, #417505 0%, #386604 100%);
+    background-image:    -moz-linear-gradient(bottom, #417505 0%, #386604 100%);
+    background-image:     -ms-linear-gradient(bottom, #417505 0%, #386604 100%);
+    background-image:      -o-linear-gradient(bottom, #417505 0%, #386604 100%);
+    background-image:         linear-gradient(bottom, #417505 0%, #386604 100%);
+
+    -webkit-box-shadow: inset 0 1px 0 #4D8C06;
+       -moz-box-shadow: inset 0 1px 0 #4D8C06;
+            box-shadow: inset 0 1px 0 #4D8C06;
+
+    -webkit-transition: all .1s ease-in-out;
+       -moz-transition: all .1s ease-in-out;
+        -ms-transition: all .1s ease-in-out;
+         -o-transition: all .1s ease-in-out;
+            transition: all .1s ease-in-out;
+}
+input[type="submit"]:hover {
+    margin-top: 10px;
+    margin-bottom: -3px;
+
+    border: 1px solid rgba(255, 255, 255, .3);
+    background-color: #4d8c06;
+    background-image: none;
+
+    -webkit-box-shadow: inset 0 1px 0 #b7cc9f;
+       -moz-box-shadow: inset 0 1px 0 #b7cc9f;
+            box-shadow: inset 0 1px 0 #b7cc9f;
+}
+input[type="submit"]:active {
+    border: 1px solid rgba(255, 255, 255, .2);
+    background-color: #4d8c06;
+    background-image: -webkit-linear-gradient(bottom, #4d8c06 0%, #417505 100%);
+    background-image:    -moz-linear-gradient(bottom, #4d8c06 0%, #417505 100%);
+    background-image:     -ms-linear-gradient(bottom, #4d8c06 0%, #417505 100%);
+    background-image:      -o-linear-gradient(bottom, #4d8c06 0%, #417505 100%);
+    background-image:         linear-gradient(bottom, #4d8c06 0%, #417505 100%);
+
+    -webkit-box-shadow: inset 0 1px 0 #b7cc9f;
+       -moz-box-shadow: inset 0 1px 0 #b7cc9f;
+            box-shadow: inset 0 1px 0 #b7cc9f;
+}
+
 @media screen and (max-width: 600px) and (min-width: 541px) {
     h3, h4, h5 { font-size: 1.78em; }
     main p { font-size: 1em; }
