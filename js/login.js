@@ -20,7 +20,8 @@ $(function () {
     $('#parallax').parallax({limitY: 0});
 
     $('form').submit(function () {
-        $('form :input').prop('readonly', true);
+        $('form :input').prop('disabled', true);
         $('form :submit').prop('disabled', true);
+        $('form :submit').html('Engångskod skickas till din mobil...');
     });
 });
