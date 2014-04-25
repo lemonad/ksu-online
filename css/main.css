@@ -72,7 +72,7 @@ nav {
     left: 0;
     top: 0;
     width: 100%;
-    height: 2em;
+    min-height: 2em;
     z-index: 100;
 
     background-color: #153859;
@@ -153,38 +153,40 @@ main ul li {
     position: relative;
 }
 main ul a {
-    width: 209px;
-    height: 545px;
+    width: 132px;
+    height: 549px;
     display: block;
     margin: 1rem 0;
     overflow: hidden;
 
     background-image: url(../images/people.png);
     background-repeat: no-repeat;
-    background-size: 533px 1096px;
+    background-size: 625px 1098px;
 
     direction: ltr;
     text-indent: -9999px;
 }
 main ul li:nth-child(1) a {
-    width: 145px;
+    background-position: -38px top;
 }
 main ul li:nth-child(2) a {
-    background-position: -163px top;
-    margin-left: -0.9rem;
+    background-position: -211px top;
+    width: 213px;
+    margin-left: -0.8rem;
+    margin-right: -1.3rem;
 }
 main ul li:nth-child(3) a {
-    width: 155px;
-    background-position: -410px top;
+    width: 136px;
+    background-position: -453px top;
 }
 main ul li:nth-child(1) a:hover {
-    background-position: left -555px;
+    background-position: -38px -549px;
 }
 main ul li:nth-child(2) a:hover {
-    background-position: -163px -555px;
+    background-position: -206px -549px;
 }
 main ul li:nth-child(3) a:hover {
-    background-position: -410px -555px;
+    background-position: -453px -549px;
 }
 main .downbutton {
     display: block;
@@ -410,19 +412,26 @@ button[type="submit"]:active {
     main p { font-size: 1em; }
     main .text-center { width: 450px; }
     main ul li a {
-        background-size: 480px;
-        width: 188px;
-        height: 491px;
+        background-size: 563px; /* 625px * 0.9 */
+        width: 119px; /* 132px * 0.9 */
+        height: 494px; /* 549px * 0.9 */
     }
-    main ul li:nth-child(1) a { width: 131px; }
-    main ul li:nth-child(2) a { background-position: -145px top; }
+    main ul li:nth-child(1) a {
+        background-position: -34px top; /* -38px * 0.9 */
+    }
+    main ul li:nth-child(2) a {
+        width: 192px; /* 213px * 0.9 */
+        background-position: -190px top; /* -211px * 0.9 */
+        margin-left: -0.7rem; /* -0.8rem * 0.9 */
+        margin-right: -1.2rem; /* -1.3rem * 0.9 */
+    }
     main ul li:nth-child(3) a {
-        width: 140px;
-        background-position: -369px top;
+        width: 122px; /* 136px * 0.9 */
+        background-position: -408px top; /* -453px * 0.9 */
     }
-    main ul li:nth-child(1) a:hover { background-position: left -500px; }
-    main ul li:nth-child(2) a:hover { background-position: -145px -500px; }
-    main ul li:nth-child(3) a:hover { background-position: -369px -500px; }
+    main ul li:nth-child(1) a:hover { background-position: -34px -494px; }
+    main ul li:nth-child(2) a:hover { background-position: -186px -494px; }
+    main ul li:nth-child(3) a:hover { background-position: -408px -494px; }
 }
 
 @media screen and (max-width: 540px) and (min-width: 480px) {
@@ -430,41 +439,89 @@ button[type="submit"]:active {
     main p { font-size: 0.95em; }
     main .text-center { width: 410px; }
     main ul li a {
-        background-size: 426px;
-        width: 167px;
-        height: 436px;
+        background-size: 500px; /* 625px * 0.8 */
+        width: 106px; /* 132px * 0.8 */
+        height: 439px; /* 549px * 0.8 */
     }
-    main ul li:nth-child(1) a { width: 116px; }
-    main ul li:nth-child(2) a { background-position: -127px top; }
+    main ul li:nth-child(1) a {
+        background-position: -30px top; /* -38px * 0.8 */
+    }
+    main ul li:nth-child(2) a {
+        width: 170px; /* 213px * 0.9 */
+        background-position: -169px top; /* -211px * 0.8 */
+        margin-left: -0.6rem; /* -0.8rem * 0.8 */
+        margin-right: -1.0rem; /* -1.3rem * 0.8 */
+    }
     main ul li:nth-child(3) a {
-        width: 124px;
-        background-position: -328px top;
+        width: 109px; /* 136px * 0.8 */
+        background-position: -362px top; /* -453px * 0.8 */
     }
-    main ul li:nth-child(1) a:hover { background-position: left -443px; }
-    main ul li:nth-child(2) a:hover { background-position: -127px -443px; }
-    main ul li:nth-child(3) a:hover { background-position: -328px -443px; }
+    main ul li:nth-child(1) a:hover { background-position: -30px -439px; }
+    main ul li:nth-child(2) a:hover { background-position: -165px -439px; }
+    main ul li:nth-child(3) a:hover { background-position: -362px -439px; }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 480px) and (min-width: 431px) {
     h3, h4, h5 { font-size: 1.4em; }
-    main p { font-size: 0.9em; }
+    main p { font-size: 0.95em; }
     main .text-center { width: 370px; }
+    main ul { margin-top: -0.5rem; }
     main ul li a {
-        background-size: 373px;
-        width: 146px;
-        height: 382px;
+        background-size: 438px; /* 625px * 0.7 */
+        width: 92px; /* 132px * 0.7 */
+        height: 384px; /* 549px * 0.7 */
     }
-    main ul li:nth-child(1) a { width: 102px; }
-    main ul li:nth-child(2) a { background-position: -110px top; }
+    main ul li:nth-child(1) a {
+        background-position: -27px top; /* -38px * 0.7 */
+    }
+    main ul li:nth-child(2) a {
+        width: 149px; /* 213px * 0.7 */
+        background-position: -148px top; /* -211px * 0.7 */
+        margin-left: -0.6rem; /* -0.8rem * 0.7 */
+        margin-right: -0.95rem; /* -1.3rem * 0.7 */
+    }
     main ul li:nth-child(3) a {
-        width: 109px;
-        background-position: -287px top;
+        width: 95px; /* 136px * 0.7 */
+        background-position: -317px top; /* -453px * 0.7 */
     }
-    main ul li:nth-child(1) a:hover { background-position: left -388px; }
-    main ul li:nth-child(2) a:hover { background-position: -110px -388px; }
-    main ul li:nth-child(3) a:hover { background-position: -287px -388px; }
+    main ul li:nth-child(1) a:hover { background-position: -27px -384px; }
+    main ul li:nth-child(2) a:hover { background-position: -144px -384px; }
+    main ul li:nth-child(3) a:hover { background-position: -317px -384px; }
 }
 
 @media screen and (max-width: 430px) {
+    h3, h4, h5 { font-size: 1.35em; }
+    main p { font-size: 0.95em; }
+    main .text-center { width: 370px; }
+    nav { font-size: 85%; }
     article { padding: 0 0 10px 0; }
+    main ul { margin-top: -0.5rem; }
+    main ul li a {
+        background-size: 375px; /* 625px * 0.6 */
+        width: 79px; /* 132px * 0.6 */
+        height: 329px; /* 549px * 0.6 */
+    }
+    main ul li:nth-child(1) a {
+        background-position: -23px top; /* -38px * 0.6 */
+    }
+    main ul li:nth-child(2) a {
+        width: 128px; /* 213px * 0.6 */
+        background-position: -127px top; /* -211px * 0.6 */
+        margin-left: -0.5rem; /* -0.8rem * 0.6 */
+        margin-right: -0.8rem; /* -1.3rem * 0.6 */
+    }
+    main ul li:nth-child(3) a {
+        width: 82px; /* 136px * 0.6 */
+        background-position: -272px top; /* -453px * 0.6 */
+    }
+    main ul li:nth-child(1) a:hover { background-position: -23px -329px; }
+    main ul li:nth-child(2) a:hover { background-position: -124px -329px; }
+    main ul li:nth-child(3) a:hover { background-position: -272px -329px; }
+}
+
+@media screen and (max-width: 320px) {
+    h3, h4 { font-size: 1.2em; }
+    nav { font-size: 75%; }
+    main .text-center { width: 312px; overflow: hidden; }
+    article { padding: 0 4px 10px 4px; }
 }
