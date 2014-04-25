@@ -35,7 +35,7 @@
             <li>
                 <a href="/blenda/">Blenda</a>
             </li><li>
-                <a href="/tvaren/gemensam/">Tvären</a>
+                <a href="/tvaren/">Tvären</a>
             </li><li>
                 <a href="http://www.ksu.se/sf-inloggning">Platå</a>
             </li><li>
@@ -53,22 +53,28 @@
 
                 <div class="text-center2" style="text-align: center;">
                     <h3>
-                        Skriv in koden som skickades till din mobil.
+                        Du behöver logga in först.
                     </h3>
 
                     <form id="login_form" method="post">
-                        <input type="hidden"
-                               name="%SESSIONID%"
-                               value="%SESSIONVALUE%">
                         <p class="err">
-                            <!-- OTP -->
+                            <!-- MESSAGE -->
                         </p>
 
-                        <label for="password">Mobilkod</label>
-                        <input type="number"
-                               name="otp"
+                        <label for="username">Användarnamn</label>
+                        <input type="text"
+                               name="username"
+                               autocapitalize="none"
+                               autocorrect="off"
                                autofocus="autofocus"
-                               placeholder="mobilkod">
+                               placeholder="anna.andersson">
+
+                        <label for="password">Lösenord</label>
+                        <input type="password"
+                               name="password"
+                               autocapitalize="none"
+                               autocorrect="off"
+                               placeholder="lösenord">
 
                         <input type="submit" name="login" value="Logga in">
                     </form>
