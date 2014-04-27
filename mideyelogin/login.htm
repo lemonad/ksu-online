@@ -54,7 +54,7 @@
             <li>
                 <a href="/blenda/">Blenda</a>
             </li><li>
-                <a href="/tvaren/index.php?title=Special:Inloggning&returnto=Huvudsida">Tvären</a>
+                <a href="/tvaren/index.php?title=Special:Inloggning&amp;returnto=Huvudsida">Tvären</a>
             </li><li>
                 <a href="http://www.ksu.se/sf-inloggning">Platå</a>
             </li><li>
@@ -81,7 +81,8 @@
                         </p>
 
                         <label for="username">Användarnamn</label>
-                        <input type="text"
+                        <input id="username"
+                               type="text"
                                name="username"
                                autocapitalize="none"
                                autocorrect="off"
@@ -89,7 +90,8 @@
                                placeholder="anna.andersson">
 
                         <label for="password">Lösenord</label>
-                        <input type="password"
+                        <input id="password"
+                               type="password"
                                name="password"
                                autocapitalize="none"
                                autocorrect="off"
