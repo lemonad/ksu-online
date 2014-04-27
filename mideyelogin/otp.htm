@@ -80,6 +80,10 @@
                         <input type="hidden"
                                name="%SESSIONID%"
                                value="%SESSIONVALUE%">
+                        <!-- Needed for mideye to accept form since we're
+                             using html5 button submit -->
+                        <input type="hidden" name="login" value="Log in">
+
                         <p class="err">
                             <!-- OTP -->
                         </p>
