@@ -22,7 +22,7 @@ $(function () {
     $('form').submit(function () {
         $('form :input').prop('disabled', true);
         $('form :submit').prop('disabled', true);
-        $('form :submit[name="login"]').html('Engångskod skickas till din mobil...');
-        $('form :submit[name="otp"]').html('Vänta...');
+        $('.loginsubmit').val('Engångskod skickas till din mobil...');
+        $('.otpsubmit').val('Vänta...');
     });
 });

@@ -76,10 +76,6 @@
                     </h3>
 
                     <form id="login_form" method="post">
-                        <!-- Needed for mideye to accept form since we're
-                             using html5 button submit -->
-                        <input type="hidden" name="login" value="Log in">
-
                         <p class="err">
                             <!-- MESSAGE -->
                         </p>
@@ -99,7 +95,10 @@
                                autocorrect="off"
                                placeholder="lösenord">
 
-                        <button type="submit" name="login">Logga in</button>
+                        <input class="loginsubmit"
+                               type="submit"
+                               name="login"
+                               value="Logga in">
                     </form>
                 </div>
             </section>
