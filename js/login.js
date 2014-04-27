@@ -22,7 +22,9 @@ $(function () {
     $('form').submit(function () {
         $('form :input').prop('disabled', true);
         $('form :submit').prop('disabled', true);
+        /* Maybe mideye doesn't accept Swedish characters?
         $('.loginsubmit').val('Engångskod skickas till din mobil...');
         $('.otpsubmit').val('Vänta...');
+        */
     });
 });
