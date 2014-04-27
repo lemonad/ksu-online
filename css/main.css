@@ -345,7 +345,7 @@ input[type="number"]:focus {
        -moz-box-shadow: inset 0 2px 0 #b7cc9f;
             box-shadow: inset 0 2px 0 #b7cc9f;
 }
-input[type="submit"] {
+button[type="submit"] {
     width: 100%;
     height: 2.6em;
     margin-top: 7px;
@@ -381,7 +381,7 @@ input[type="submit"] {
          -o-transition: all .1s ease-in-out;
             transition: all .1s ease-in-out;
 }
-input[type="submit"]:hover {
+button[type="submit"]:hover {
     margin-top: 10px;
     margin-bottom: -3px;
 
@@ -393,7 +393,7 @@ input[type="submit"]:hover {
        -moz-box-shadow: inset 0 1px 0 #b7cc9f;
             box-shadow: inset 0 1px 0 #b7cc9f;
 }
-input[type="submit"]:active {
+button[type="submit"]:active {
     border: 1px solid rgba(255, 255, 255, .2);
     background-color: #4d8c06;
     background-image: -webkit-linear-gradient(bottom, #4d8c06 0%, #417505 100%);

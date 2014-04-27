@@ -82,16 +82,24 @@
 
                         <label for="username">Användarnamn</label>
                         <input type="text"
-                               name="username">
+                               name="username"
+                               autocapitalize="none"
+                               autocorrect="off"
+                               autofocus="autofocus"
+                               placeholder="anna.andersson">
 
                         <label for="password">Lösenord</label>
                         <input type="password"
-                               name="password">
+                               name="password"
+                               autocapitalize="none"
+                               autocorrect="off"
+                               placeholder="lösenord">
 
-                        <input class="loginsubmit"
-                               type="submit"
-                               name="login"
-                               value="Logga in">
+                        <button class="loginsubmit"
+                                type="submit"
+                                name="login">
+                            Logga in
+                        </button>
                     </form>
                 </div>
             </section>

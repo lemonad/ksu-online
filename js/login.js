@@ -20,11 +20,9 @@ $(function () {
     $('#parallax').parallax({limitY: 0});
 
     $('form').submit(function () {
-        $('form :input').prop('disabled', true);
+        $('form :input').prop('readonly', true);
         $('form :submit').prop('disabled', true);
-        /* Maybe mideye doesn't accept Swedish characters?
-        $('.loginsubmit').val('Engångskod skickas till din mobil...');
-        $('.otpsubmit').val('Vänta...');
-        */
+        $('.loginsubmit').html('Engångskod skickas till din mobil...');
+        $('.otpsubmit').html('Vänta...');
     });
 });
