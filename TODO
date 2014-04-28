@@ -1,12 +1,9 @@
+* Navbar noise is too visible.
 * Finalize texts.
-* Add favicons (shortcut icon, icon, apple-touch...)
-* Add (iOS) icons.
-* Realign people image.
-* Silhoutte image is way too big.
-* Optimize images in general.
-* Add Google Analytics code to index.html.
-* Add Google site verification.
+* Don't zoom the whole page after loading, just the people.
+* Optimize images in general (http://www.smushit.com/ysmush.it/).
+* Add Google Analytics code to index.html (Gunilla).
+* Add Google site verification (Gunilla).
 
 * Add Facebook image?
 * Add Twitter card/site?
-
