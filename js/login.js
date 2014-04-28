@@ -19,6 +19,10 @@ $(function () {
     // Initialize starfield parallax scrolling.
     $('#parallax').parallax({limitY: 0});
 
+    // Enable form placeholder behavior for browsers that
+    // aren't trying hard enough yet.
+    $('input').placeholder();
+
     $('form').submit(function () {
         $('form :input').prop('readonly', true);
         $('form :submit').prop('disabled', true);

@@ -13,6 +13,7 @@
   "dependencies": {
     "animate.css": "daneden/animate.css#2265249ffe2d63b16025344b405282b0684e460c",
     "jquery": ">= 2.1.0",
+    "jquery-placeholder": ">= 2.0.8",
     "normalize-css": ">= 3.0.1",
     "parallax": ">= 1.1.1",
     "viewport-units-buggyfill": ">= 0.3.0"
