@@ -28,8 +28,10 @@ $(function () {
     var found;
     if (msg === 'Enter OTP:') {
         $('.err').text('');
-    } else if (msg === 'Invalid username or password') {
-        $('.err').text('Ogiltigt användarnamn eller lösenord.');
+    } else if (msg === 'Session expired, please try again') {
+        $('.err').text('Koden är för gammal, var vänlig försök igen.');
+    } else if (msg.substr(0, 29) === 'Invalid username or password') {
+        $('.err').text('Ogiltigt användarnamn eller lösenord. Var vänlig försök igen.');
     } else if (msg === 'Invalid OTP.') {
         $('.err').text('Ogiltig engångskod. Var vänlig försök igen.');
     } else {
