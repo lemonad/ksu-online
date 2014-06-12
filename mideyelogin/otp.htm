@@ -17,13 +17,7 @@
           type="text/css">
 
     <!-- CSS -->
-    <link href="../bower_components/normalize-css/normalize.css"
-          rel="stylesheet">
-    <link href="../css/main.css" rel="stylesheet">
-
-    <!-- Javascript -->
-    <script src="../bower_components/viewport-units-buggyfill/viewport-units-buggyfill.js"></script>
-    <script>window.viewportUnitsBuggyfill.init();</script>
+    <link href="/css/main.min.css" rel="stylesheet">
 
     <!-- Favicons -->
     <link rel="shortcut icon" href="/favicon.ico">
@@ -42,7 +36,7 @@
     <link rel="icon" type="image/png" href="/images/favicons/favicon-32x32.png" sizes="32x32">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="msapplication-TileImage" content="/images/favicons/mstile-144x144.png">
-    <meta name="msapplication-config" content="/images/favicons/browserconfig.xml">
+    <meta name="msapplication-config" content="/browserconfig.xml">
 </head>
 <body>
     <nav>
@@ -66,7 +60,7 @@
                     <a href="/">KSU online</a>
                 </h1>
 
-                <div class="text-center2" style="text-align: center;">
+                <div class="text-center">
                     <h3>
                         Skriv in engångskoden du fått via<br>
                         din mobil.
@@ -109,16 +103,14 @@
         </ul>
         <div class="bottomless">
             <a href="http://ksu.se/">
-                <img class="ksu-logo" src="../images/ksu-logo.png" alt="logo">
+                <img class="ksu-logo" src="/images/ksu-logo.png" alt="logo">
             </a>
             <p class="ksu-text"><small>Kärnkraftsäkerhet och Utbildning AB</small></p>
         </div>
     </footer>
 
-    <!-- Additional javascript -->
-    <script src="../bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="../bower_components/jquery-placeholder/jquery.placeholder.js"></script>
-    <script src="../bower_components/parallax/deploy/jquery.parallax.min.js"></script>
-    <script src="../js/login.js"></script>
+    <!-- Javascript -->
+    <script src="/js/vendor.min.js"></script>
+    <script src="/js/login.min.js"></script>
 </body>
 </html>

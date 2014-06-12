@@ -1,0 +1,12 @@
+/* TEAM */
+HTML and CSS: Jonas Nockert
+Twitter: @lemonad
+
+Illustrator: Anna Karlsson
+
+Designer: Jenny Humby
+
+Designer: Gunilla Gillgren
+
+---
+https://github.com/lemonad/ksu-online
