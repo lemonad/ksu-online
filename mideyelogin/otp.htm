@@ -17,7 +17,13 @@
           type="text/css">
 
     <!-- CSS -->
-    <link href="/css/main.min.css" rel="stylesheet">
+    <!-- build:css /css/main.min.css -->
+    <link href="/bower_components/normalize-css/normalize.css"
+          rel="stylesheet">
+    <link href="/bower_components/animate.css/animate.min.css"
+          rel="stylesheet">
+    <link href="/css/main.css" rel="stylesheet">
+    <!-- endbuild -->
 
     <!-- Favicons -->
     <link rel="shortcut icon" href="/favicon.ico">
@@ -110,7 +116,13 @@
     </footer>
 
     <!-- Javascript -->
-    <script src="/js/vendor.min.js"></script>
-    <script src="/js/login.min.js"></script>
+    <!-- build:js /js/vendor.min.js -->
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/parallax/deploy/jquery.parallax.js"></script>
+    <script src="/bower_components/jquery-placeholder/jquery.placeholder.js"></script>
+    <!-- endbuild -->
+    <!-- build:js /js/login.min.js -->
+    <script src="/js/login.js"></script>
+    <!-- endbuild -->
 </body>
 </html>
